@@ -11,16 +11,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.taskapp.R;
 
 
 public class FormFragment extends Fragment {
-    Button button;
+
+   private Button button;
 
     public FormFragment() {
-
     }
 
     @Override
@@ -37,16 +38,13 @@ public class FormFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         button = view.findViewById(R.id.btnSave);
-        button.setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btnSave).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("save", "onClick: hi ");
-                Toast.makeText(getContext(), "успешно", Toast.LENGTH_LONG).show();
+                String text = button.getText().toString();
+                Log.d("FormFragment", "text = " + text);
             }
         });
-
-
     }
 }
