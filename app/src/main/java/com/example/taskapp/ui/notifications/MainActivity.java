@@ -1,8 +1,9 @@
-package com.example.taskapp;
+package com.example.taskapp.ui.notifications;
 
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.taskapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -35,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
             @Override
             public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                if (destination.getId() == R.id.btnSave) {
-                    navView.setVisibility(View.VISIBLE);
+                if (destination.getId() == R.id.from_fragment) {
+                    navView.setVisibility(View.GONE);
                 }else {
                     navView.setVisibility(View.VISIBLE);
                 }

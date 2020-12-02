@@ -27,13 +27,13 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/btnSave"
-        android:name="com.example.taskapp.FormFragment"
+        android:id="@+id/from_fragment"
+        android:name="com.example.taskapp.ui.form.FormFragment"
         android:label="fragment_form"
         tools:layout="@layout/fragment_form" />
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.taskapp.ui.Profile.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile2" />
+        tools:layout="@layout/fragment_profile" />
 </navigation>

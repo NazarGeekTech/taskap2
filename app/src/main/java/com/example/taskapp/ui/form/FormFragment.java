@@ -1,4 +1,4 @@
-package com.example.taskapp;
+package com.example.taskapp.ui.form;
 
 import android.os.Bundle;
 
@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.taskapp.R;
 
 
 public class FormFragment extends Fragment {
